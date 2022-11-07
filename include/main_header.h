@@ -8,6 +8,7 @@
 #include <unistd.h>
 #ifndef CLIBRARYDAVIDLEE_MAIN_HEADER_H
 #define CLIBRARYDAVIDLEE_MAIN_HEADER_H
+char* makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSend);
 void loopThroughStringArray(char tempString3[]);
 char* getFileNameFromFilePath(char tempString4[]);
 #endif //CLIBRARYDAVIDLEE_MAIN_HEADER_H
