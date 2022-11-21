@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/CProject/CLibrary/src/main.c" "CMakeFiles/CLibraryDavidLee.dir/src/main.c.obj" "gcc" "CMakeFiles/CLibraryDavidLee.dir/src/main.c.obj.d"
+  "/run/media/root/687E-3B7D/CProject/CLibrary/src/main.c" "CMakeFiles/CLibraryDavidLee.dir/src/main.c.o" "gcc" "CMakeFiles/CLibraryDavidLee.dir/src/main.c.o.d"
   )
 
 # Targets to which this target links.

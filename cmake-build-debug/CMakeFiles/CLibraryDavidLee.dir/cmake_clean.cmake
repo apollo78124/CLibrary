@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CLibraryDavidLee.exe"
-  "CLibraryDavidLee.exe.manifest"
+  "CLibraryDavidLee"
   "CLibraryDavidLee.pdb"
-  "CMakeFiles/CLibraryDavidLee.dir/src/main.c.obj"
-  "CMakeFiles/CLibraryDavidLee.dir/src/main.c.obj.d"
-  "libCLibraryDavidLee.dll.a"
+  "CMakeFiles/CLibraryDavidLee.dir/src/main.c.o"
+  "CMakeFiles/CLibraryDavidLee.dir/src/main.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CLibraryDavidLee.exe"
-		},
-		{
-			"path" : "CLibraryDavidLee.pdb"
+			"path" : "CLibraryDavidLee"
 		}
 	],
 	"backtrace" : 1,
@@ -182,7 +179,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "E:/CProject/CLibrary/include"
+					"path" : "/run/media/root/687E-3B7D/CProject/CLibrary/include"
 				}
 			],
 			"language" : "C",
@@ -212,16 +209,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
 	"name" : "CLibraryDavidLee",
-	"nameOnDisk" : "CLibraryDavidLee.exe",
+	"nameOnDisk" : "CLibraryDavidLee",
 	"paths" : 
 	{
 		"build" : ".",

@@ -1,13 +1,17 @@
 #include <stdio.h>
+#include <inttypes.h>
 #include "main_header.h"
 
-struct packet {
+
+struct Packet {
     char flag[9];
     int seq;
     int ack;
-
+    int dataLength;
+    int windowNum;
+    char data[1981]
 };
-
+void processPacketHeader1(char *packet1, struct Packet *clientReceiveBuffer1);
 int main() {
     const char *synFlag = "SYN";
     const char *ackFlag = "ACK";
@@ -25,6 +29,13 @@ int main() {
     strcpy(dataToSend, "Hi how are you?");
     strcpy (packetTemp, makePacketHeader(ackFlag, 12540, 1, 58790, dataToSend));
     printf("%s\n", packetTemp);
+
+
+    /**
+     * Receiver side
+     */
+    struct Packet clientReceiveBuffer[255];
+    processPacketHeader1(packetTemp, clientReceiveBuffer);
     return 0;
 }
 
@@ -93,8 +104,33 @@ char* makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSen
     return result;
 }
 
-void processPacketHeader() {
+void processPacketHeader1(char *packet1, struct Packet *clientReceiveBuffer1) {
+    struct Packet tempPacket1 = {0};
+    char seqTemp[17];
+    char ackTemp[17];
+    char dataLengthTemp[6];
+    char windowNumTemp[17];
+    char dataTemp[1981];
 
+    strncpy(tempPacket1.flag, packet1 + 0, 8);
+    strncpy(seqTemp, packet1 + 8, 16);
+    seqTemp[16] = '\0';
+    strncpy(ackTemp, packet1 + 24, 16);
+    ackTemp[16] = '\0';
+    strncpy(dataLengthTemp, packet1 + 40, 5);
+    dataLengthTemp[5] = '\0';
+    strncpy(windowNumTemp, packet1 + 45, 16);
+    windowNumTemp[16] = '\0';
+
+    tempPacket1.seq = strtoumax(seqTemp, NULL, 10);
+    tempPacket1.ack = strtoumax(ackTemp, NULL, 10);
+    tempPacket1.dataLength = strtoumax(dataLengthTemp, NULL, 10);
+    tempPacket1.windowNum = strtoumax(windowNumTemp, NULL, 10);
+    if (tempPacket1.dataLength < 1981) {
+        strncpy(tempPacket1.data, packet1 + 61, tempPacket1.dataLength);
+    } else {
+        //Throw error
+    }
 }
 
 void loopThroughStringArray(char tempString3[]) {
@@ -116,3 +152,11 @@ char* getFileNameFromFilePath(char tempString4[]) {
     close(stringToTest);
     return tokenBefore;
 }
+
+int stringToInt(char tempString4[]) {
+
+    int number = strtoumax(tempString4, NULL, 10);
+
+    return number;
+}
+
