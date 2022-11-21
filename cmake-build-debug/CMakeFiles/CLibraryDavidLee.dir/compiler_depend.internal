@@ -28,6 +28,12 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o
  /usr/include/bits/stdio_lim.h
  /usr/include/bits/floatn.h
  /usr/include/bits/floatn-common.h
+ /usr/include/inttypes.h
+ /usr/lib/gcc/x86_64-redhat-linux/12/include/stdint.h
+ /usr/include/stdint.h
+ /usr/include/bits/wchar.h
+ /usr/include/bits/stdint-intn.h
+ /usr/include/bits/stdint-uintn.h
  /run/media/root/687E-3B7D/CProject/CLibrary/include/main_header.h
  /usr/include/stdlib.h
  /usr/include/bits/waitflags.h
@@ -37,7 +43,6 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o
  /usr/include/bits/types/clockid_t.h
  /usr/include/bits/types/time_t.h
  /usr/include/bits/types/timer_t.h
- /usr/include/bits/stdint-intn.h
  /usr/include/endian.h
  /usr/include/bits/endian.h
  /usr/include/bits/endianness.h

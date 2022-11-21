@@ -27,6 +27,12 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/floatn-common.h \
+  /usr/include/inttypes.h \
+  /usr/lib/gcc/x86_64-redhat-linux/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-uintn.h \
   ../include/main_header.h \
   /usr/include/stdlib.h \
   /usr/include/bits/waitflags.h \
@@ -36,7 +42,6 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/stdint-intn.h \
   /usr/include/endian.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
@@ -91,15 +96,11 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/linux/limits.h:
-
 /usr/include/bits/local_lim.h:
 
 /usr/include/bits/dirent.h:
 
 /usr/include/strings.h:
-
-/usr/include/string.h:
 
 /usr/include/bits/stdlib-float.h:
 
@@ -118,6 +119,8 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
 /usr/include/bits/thread-shared-types.h:
 
 /usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/types/struct_timeval.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -141,9 +144,11 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
 
 /usr/include/bits/types/time_t.h:
 
-/usr/include/bits/types/struct_timeval.h:
-
 /usr/include/bits/libc-header-start.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/cdefs.h:
 
 /usr/include/stdio.h:
 
@@ -155,11 +160,11 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
 
 /usr/include/stdc-predef.h:
 
+/usr/include/string.h:
+
+/usr/include/bits/stdint-uintn.h:
+
 /usr/include/features.h:
-
-/usr/include/bits/confname.h:
-
-/usr/include/bits/wordsize.h:
 
 /usr/include/bits/dirent_ext.h:
 
@@ -170,10 +175,6 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/types/timer_t.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/bits/timesize.h:
 
 /usr/include/bits/select.h:
 
@@ -187,15 +188,33 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
 
 /usr/include/bits/floatn-common.h:
 
-../include/main_header.h:
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/stdlib.h:
 
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/bits/stdint-intn.h:
 
-/usr/include/bits/types/__locale_t.h:
+/usr/lib/gcc/x86_64-redhat-linux/12/include/stdint.h:
 
-/usr/include/stdlib.h:
+../include/main_header.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -220,7 +239,3 @@ CMakeFiles/CLibraryDavidLee.dir/src/main.c.o: ../src/main.c \
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/endian.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/sys/select.h:
